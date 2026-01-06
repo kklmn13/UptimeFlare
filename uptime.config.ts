@@ -7,18 +7,32 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "QS's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://www.baidu.com', label: 'GitHub' },
+    { link: 'https://www.baidu.com/', label: 'Blog' },
+    { link: 'mailto:me@123.net', label: 'Email Me', highlight: true },
   ],
 }
 
 const workerConfig: WorkerConfig = {
   // Define all your monitors here
   monitors: [
+    {
+      id: 'cliproxyapi-new',
+      name: 'cliproxyapi-new',
+      method: 'GET',
+      target: 'https://cyanse-cliproxyapi-new.hf.space',
+      timeout: 5000,
+    },
+    {
+      id: 'aistudiobuildws',
+      name: 'aistudiobuildws',
+      method: 'GET',
+      target: 'https://cyanse-aistudiobuildws.hf.space',
+      timeout: 5000,
+    },
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
