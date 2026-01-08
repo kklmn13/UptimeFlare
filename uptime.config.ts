@@ -33,6 +33,13 @@ const workerConfig: WorkerConfig = {
       target: 'https://cyanse-aistudiobuildws.hf.space',
       timeout: 5000,
     },
+    {
+      id: 'cliproxyapi-new',
+      name: 'cliproxyapi-new',
+      method: 'GET',
+      target: 'https://cli-proxy-api-54bm.onrender.com',
+      timeout: 5000,
+    },
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
