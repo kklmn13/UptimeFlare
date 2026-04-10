@@ -37,7 +37,7 @@ const workerConfig: WorkerConfig = {
       id: 'cliproxyapi-new',
       name: 'cliproxyapi-new',
       method: 'GET',
-      target: 'https://cli-proxy-api-54bm.onrender.com',
+      target: 'https://cli1.cloudreve.tk',
       timeout: 5000,
     },
     // Example HTTP Monitor
